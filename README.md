@@ -92,10 +92,10 @@ grant usage on database  SHARE_USAGE  to share SHARE_USAGE_SH;
 Data sharing is availble only between same regions.
 Supported regions are:
 
-AWS - US-EAST - Use ACCOUNT_NAME => CH52627
-AWS - EU-CENTRAL - Use ACCOUNT_NAME => YA21808
-AZURE - EAST-US-2 - Use ACCOUNT_NAME => XL70015
-AZURE - EU-CENTRAL - Use ACCOUNT_NAME => VISIONBI
+* AWS - US-EAST => CH52627
+* AWS - EU-CENTRAL => YA21808
+* AZURE - EAST-US-2 => XL70015
+* AZURE - EU-CENTRAL => VISIONBI
 
 Share Data
 ```sql
