@@ -1,5 +1,6 @@
-## Create stored procedure to sync SNOWFLAKE database into SHARE_USAGE database
-Procedure 
+## Create stored procedure SP_ACCOUNT_USAGE_DATA
+Procedure to sync SNOWFLAKE database into SHARE_USAGE database. The procedure will create the tables if they do not exists
+
 ```sql
 CREATE OR REPLACE PROCEDURE SHARE_USAGE.ACCOUNT_USAGE.SP_ACCOUNT_USAGE_DATA(LOAD_METHOD STRING)
 RETURNS STRING
