@@ -16,7 +16,7 @@ No actual data (i.e. from your data tables) is being shared with Snowly. Only in
 ## Got it. Let's do this.
 
 ### Create a new database
-THIS SCRIPT REQUIRES ACCOUNTADMIN ROLE IN ORDER TO CREATE SHARE AND READ FROM "SNOWFLAKE" INTERNAL DATABASE
+This script requires ACCOUNTADMIN ROLE in order to create share and read from "SNOWFLAKE" internal database
 ```sql
 //
 USE role ACCOUNTADMIN;
