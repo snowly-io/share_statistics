@@ -23,9 +23,6 @@ USE role ACCOUNTADMIN;
 
 Create a new database to be shared later using SnowShare
 ```sql
-//THIS SCRIPT REQUIRES ACCOUNTADMIN ROLE IN ORDER TO CREATE SHARE AND READ FROM "SNOWFLAKE" INTERNAL DATABASE
-USE role ACCOUNTADMIN;
-
 Create database SHARE_USAGE ;
 Use database SHARE_USAGE;
 Create Schema ACCOUNT_USAGE;
