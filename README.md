@@ -18,7 +18,6 @@ No actual data (i.e. from your data tables) is being shared with Snowly. Only in
 ### Create a new database
 This script requires ACCOUNTADMIN ROLE in order to create share and read from "SNOWFLAKE" internal database
 ```sql
-//
 USE role ACCOUNTADMIN;
 ```
 
@@ -56,6 +55,11 @@ call SHARE_USAGE.ACCOUNT_USAGE.SP_ACCOUNT_USAGE_DATA('FULL');
 
 
 ### Schedule task to update the tables 
+
+*NOTE: it is recommended to create a separate WH to monitor the cost of the sync
+```sql
+CREATE WAREHOUSE WH_SNOWLY WITH WAREHOUSE_SIZE = 'XSMALL' WAREHOUSE_TYPE = 'STANDARD' AUTO_SUSPEND = 60 AUTO_RESUME = TRUE;
+```
 This task will be executed every 8 hours at 04:00, 12:00 and 20:00 UTC
 ```sql
   --CREATE TASK
