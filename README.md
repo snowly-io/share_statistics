@@ -31,8 +31,8 @@ USE Schema ACCOUNT_USAGE;
 ```
 
 ### Create s stored procedure
-The full script can be found here []
-This is the object 
+The full script can be found [here](/SP_ACCOUNT_USAGE_DATA.md)
+This is the object that will be created
 ```sql
 CREATE OR REPLACE PROCEDURE SHARE_USAGE.ACCOUNT_USAGE.SP_ACCOUNT_USAGE_DATA(LOAD_METHOD STRING)
 RETURNS STRING
@@ -43,6 +43,8 @@ AS
 $$ 
 .... 
 ```
+ [Full Create Script](/SP_ACCOUNT_USAGE_DATA.md)
+
 
 ### Run Once
 Execute the procedure above to create the tables and load the data
