@@ -4,7 +4,7 @@
 To help you analyze Snowflake's usage patterns and monitor your cost, Snowly needs some information about the way you use your Snowflake account. For example: what type of queries you typically runs, at what times and by whom.
 <div style="width=100%; text-align:center"><img src="https://snowly.io/img/database.png" align="center" alt="SnowShare" width="400"/></div><br>
 No actual data (i.e. from your data tables) is being shared with Snowly. Only information about the use of Snowflake is being shared. For example: query execution times, utilization of warehouses etc.
-[READ MORE...](https://snowly.io/how-to)
+ [READ MORE](https://snowly.io/how-to)
 
 # Install
 ## What does the installation script do?
