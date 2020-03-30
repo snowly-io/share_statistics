@@ -75,7 +75,8 @@ Activate the Task
 --ACTIVATE TASK
   ALTER TASK SHARE_USAGE.ACCOUNT_USAGE.TASK_ACCOUNT_USAGE  RESUME;
 ```
-
+<div data-v-241e3379="" class="msg-box-one two" style="padding-left: 180px;padding-right: 180px;"><img src="https://snowly.io/img/yellow-shape-2.svg">
+</div>
 
 ## Share
 Up until now, no data was shared
