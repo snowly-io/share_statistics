@@ -209,7 +209,7 @@ for (j = 0; j < full_script.split(';').length; j++){
     curr_sql=full_script.split(';')[j];
 
     if(curr_sql && curr_sql.length>10){
-        if($loading_method='FULL'){
+        if($loading_method=='FULL'){
         curr_sql = curr_sql.replace('table if not exists',' or replace table ')
         }
         var snowflake_statement = snowflake.createStatement( {sqlText: curr_sql});
