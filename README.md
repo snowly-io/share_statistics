@@ -100,7 +100,8 @@ Supported regions are:
 | AWS |EU-CENTRAL | YA21808 |
 | AZURE |EAST-US-2 | XL70015 |
 | AZURE |EU-CENTRAL | VISIONBI |
-
+| AZURE | WEST-EUROPE | NO72846 |
+| GCP |  | COMMING_SOON |
 
 Share Data
 ```sql
