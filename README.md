@@ -94,14 +94,14 @@ grant usage on database  SHARE_USAGE  to share SHARE_USAGE_SH;
 Data sharing is availble only between same regions.
 Supported regions are:
 
-| Cloud | Region | Snowly Account |
-|-|-|-|
-| AWS |US-EAST | CH52627 |
-| AWS |EU-CENTRAL | YA21808 |
-| AZURE |EAST-US-2 | XL70015 |
-| AZURE |EU-CENTRAL | VISIONBI |
-| AZURE | WEST-EUROPE | NO72846 |
-| GCP |  | COMMING_SOON |
+| Cloud | Region | Snowly Account | NAME |
+|-|-|-|-|
+| AWS | US-EAST-1 | CH52627 | US East (N. Virginia) |
+| AWS | EU-CENTRAL-1 | YA21808 | EU (Frankfurt) |
+| AWS | EU-WEST-1 | HB37582 | EU (Ireland) |
+| AZURE | EAST-US-2 | XL70015 | East US 2 (Virginia) |
+| AZURE | WEST-EUROPE | VISIONBI | West Europe (Netherlands) |
+| GCP |  |  |Comming Soon... |
 
 Share Data
 ```sql
