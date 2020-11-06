@@ -6,7 +6,7 @@ To help you analyze Snowflake's usage patterns and monitor your cost, Snowly nee
 No actual data (i.e. from your data tables) is being shared with Snowly. Only information about the use of Snowflake is being shared. For example: query execution times, utilization of warehouses etc.
  [READ MORE](https://snowly.io/how-to)
 
-# Install
+# Install 2
 ## What does the installation script do?
 1. Create a new database for the shared information
 2. Create a process (stored procedure) to keep the information updated
