@@ -67,6 +67,7 @@ The full script can be found [here](/SP_ACCOUNT_SORAGE_DATA.md)
 It is recommended to create a separate Warehouse to monitor the cost of the sync
 ```sql
 CREATE WAREHOUSE SNOWLY_WH WITH WAREHOUSE_SIZE = 'XSMALL' WAREHOUSE_TYPE = 'STANDARD' AUTO_SUSPEND = 60 AUTO_RESUME = TRUE;
+
 ```
 
 
@@ -78,7 +79,7 @@ call SHARE_USAGE.ACCOUNT_USAGE.SP_ACCOUNT_USAGE_DATA('FULL');
 call SHARE_USAGE.ACCOUNT_USAGE.SP_ACCOUNT_STORAGE_DATA('FULL');
 ```
 
-
+    
 ### Schedule Compute Procedure using TASK 
 
 *NOTE: it is recommended to create a separate Warehouse to monitor the cost of the sync
