@@ -142,6 +142,7 @@ Supported regions are:
 | Cloud | Region | Snowly Account | NAME |
 |-|-|-|-|
 | AWS | US-EAST-1 | CH52627 | US East (N. Virginia) |
+| AWS | US-WEST-2 | UFA18163 | US West (Oregon) |
 | AWS | EU-CENTRAL-1 | YA21808 | EU (Frankfurt) |
 | AWS | EU-WEST-1 | HB37582 | EU (Ireland) |
 | AZURE | EAST-US-2 | XL70015 | East US 2 (Virginia) |
