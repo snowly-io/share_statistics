@@ -19,7 +19,7 @@ var TASK_NAME = `TASK_ACCOUNT_STORAGE`;
 var RUN_ID = Date.now().toString();
 
 var full_script = `
-Create table if not exists  ACCOUNT_USAGE.SNOWLY_EXECUTION_LOG (
+Create table if /*only*/ not exists  ACCOUNT_USAGE.SNOWLY_EXECUTION_LOG (
 RUN_ID STRING,
 TASK_NAME STRING,
 OBJECT_NAME STRING,
@@ -29,7 +29,7 @@ SP_VERSION STRING,
 EVENT_DATA VARIANT
 );
 /*cmd separator*/
-Create  table if not exists ACCOUNT_USAGE.SNOWLY_EXECUTION_LOG(RUN_ID, TASK_NAME, OBJECT_NAME, EVENT_NAME, EVENT_TS, SP_VERSION, EVENT_DATA)
+Insert into ACCOUNT_USAGE.SNOWLY_EXECUTION_LOG(RUN_ID, TASK_NAME, OBJECT_NAME, EVENT_NAME, EVENT_TS, SP_VERSION, EVENT_DATA)
 SELECT '`+RUN_ID+`','`+TASK_NAME+`', 'TABLE_STORAGE_USAGE', 'Started', current_timestamp(), '`+SP_VERSION+`' ,parse_json('{desc: "Fi"}');
 /*cmd separator*/
 Create table if not exists  ACCOUNT_USAGE.TABLE_STORAGE_USAGE as
@@ -106,9 +106,9 @@ SELECT '`+RUN_ID+`','`+TASK_NAME+`', 'STORAGE_USAGE', 'Insert', current_timestam
 var message='';
 try
 {
-for (j = 0; j < full_script.split(';').length; j++){
+for (j = 0; j < full_script.split('/*cmd separator*/').length; j++){
 
-    curr_sql=full_script.split(';')[j];
+    curr_sql=full_script.split('/*cmd separator*/')[j];
 
     if(curr_sql && curr_sql.length>20){
         if(LOAD_METHOD=='FULL'){
